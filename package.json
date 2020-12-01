@@ -1,0 +1,13 @@
+{
+  "name": "Chickster",
+  "version": "1.0.0",
+  "description": "Power to the Members",
+  "scripts": {
+    "start": "node server.js",
+    "test": "STATUS=0; tap test/**/*.test.js || STATUS=$?; standard || STATUS=$?; exit $STATUS",
+    "test:watch": "nodemon -q -x 'npm test'"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  }
+}
